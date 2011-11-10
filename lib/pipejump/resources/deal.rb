@@ -236,6 +236,7 @@ module Pipejump
 
     has_many :notes
     has_many :reminders
+    has_many :emails
 
     def to_query #:nodoc:
       @attributes.collect { |pair| pair[0] = "#{pair[0]}"; pair.join('=') }.join('&')
